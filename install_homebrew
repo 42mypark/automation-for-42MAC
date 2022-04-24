@@ -1,0 +1,8 @@
+
+
+mkdir $HOME/goinfre/.brew && curl -fsSL https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C $HOME/goinfre/.brew
+mkdir -p /tmp/.$(whoami)-brew-locks
+mkdir -p $HOME/goinfre/.brew/var/homebrew
+ln -s /tmp/.$(whoami)-brew-locks $HOME/goinfre/.brew/var/homebrew/locks
+export PATH="$HOME/goinfre/.brew/bin:$PATH"
+brew update && brew upgrade
