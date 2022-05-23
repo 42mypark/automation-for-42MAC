@@ -1,0 +1,3 @@
+curl https://github.com/llvm/llvm-project/releases/download/llvmorg-14.0.0/clang+llvm-14.0.0-x86_64-apple-darwin.tar.xz --output clang.tar.xz;
+tar -xf clang.tar.xz -C ~/goinfre;
+rm clang.tar.xz

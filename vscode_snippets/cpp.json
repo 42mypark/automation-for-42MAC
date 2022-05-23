@@ -1,0 +1,72 @@
+{
+	// Place your snippets for cpp here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"mypark If not define": {
+		"prefix": "ifnd",
+		"body": [
+			"#ifndef ${TM_FILENAME_BASE}_HPP",
+			"#define ${TM_FILENAME_BASE}_HPP",
+			"",
+			"#endif  //${TM_FILENAME_BASE}_HPP"
+		],
+		"description": "mypark ifnd"
+	},
+	"std::cout": {
+		"prefix": "cout",
+		"body": [
+			"std::cout << "
+		],
+		"description": "stdout"
+	},
+	"std::endl": {
+		"prefix": "endl",
+		"body": [
+			"std::endl;"
+		],
+		"description": "new line"
+	},
+	"Othodox header": {
+		"prefix": "class_header",
+		"body": [
+			"#ifndef ${TM_FILENAME_BASE}_HPP",
+			"#define ${TM_FILENAME_BASE}_HPP",
+			"class ${TM_FILENAME_BASE} {",
+			"private:",
+			"\t${1:data}",
+			"",
+			"public:",
+			"\t${TM_FILENAME_BASE}();",
+			"\t${TM_FILENAME_BASE}(${TM_FILENAME_BASE}& ${2:var});",
+			"\t${TM_FILENAME_BASE}& operator=(const ${TM_FILENAME_BASE}& ${3:var});",
+			"\t~${TM_FILENAME_BASE}();",
+			"}",
+			"",
+			"#endif  //${TM_FILENAME_BASE}_HPP"
+		],
+		"description": "mypark othodox"
+	},
+	"Othodox implemetation": {
+		"prefix": "class_impl",
+		"body": [
+			"${TM_FILENAME_BASE}::~${TM_FILENAME_BASE}() {}",
+			"",
+			"${TM_FILENAME_BASE}::${TM_FILENAME_BASE}() {}",
+			"",
+			"${TM_FILENAME_BASE}::${TM_FILENAME_BASE}(${TM_FILENAME_BASE}& ${2:var}) {}",
+			"",
+			"${TM_FILENAME_BASE}& ${TM_FILENAME_BASE}::operator=(const ${TM_FILENAME_BASE}& ${3:var}) {}",
+		],
+		"description": "mypark othodox"
+	}
+}

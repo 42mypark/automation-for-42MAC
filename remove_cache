@@ -1,0 +1,4 @@
+#!/bin/bash
+rm -rf /Users/mypark/Library/Application\ Support/Slack/Cache/* && rm -rf /Users/mypark/Library/Application\ Support/Slack/Code\ Cache/* && rm -rf /Users/mypark/Library/Application\ Support/Slack/Service\ Worker/CacheStorage/* && echo "slack cache" 
+rm -rf /Users/mypark/Library/Application Support/Code/User/workspaceStorage/*  && echo "code cache" 
+rm -rf /Users/mypark/Library/Caches && echo "Library cache"
