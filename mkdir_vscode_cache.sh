@@ -12,6 +12,7 @@ mkdir -pv $CACHE/Library/Application\ Support/Code/CachedData
 mkdir -pv $CACHE/Library/Application\ Support/Code/CachedExtensionVSIXs
 mkdir -pv $CACHE/Library/Application\ Support/Code/CachedExtensions
 mkdir -pv $CACHE/Library/Application\ Support/Code/Code\ Cache
+mkdir -pv $CACHE/Library/Caches/Homebrew
 
 
 
