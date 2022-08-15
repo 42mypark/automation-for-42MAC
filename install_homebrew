@@ -1,5 +1,4 @@
 
-
 mkdir $HOME/goinfre/.brew && curl -fsSL https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C $HOME/goinfre/.brew
 mkdir -p /tmp/.$(whoami)-brew-locks
 mkdir -p $HOME/goinfre/.brew/var/homebrew

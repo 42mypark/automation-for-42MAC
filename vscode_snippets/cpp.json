@@ -32,12 +32,12 @@
 	"std::endl": {
 		"prefix": "endl",
 		"body": [
-			"std::endl;"
+			"<< std::endl;"
 		],
 		"description": "new line"
 	},
 	"Othodox header": {
-		"prefix": "class_header",
+		"prefix": "ocheader",
 		"body": [
 			"#ifndef ${TM_FILENAME_BASE}_HPP",
 			"#define ${TM_FILENAME_BASE}_HPP",
@@ -46,27 +46,43 @@
 			"\t${1:data}",
 			"",
 			"public:",
-			"\t${TM_FILENAME_BASE}();",
-			"\t${TM_FILENAME_BASE}(${TM_FILENAME_BASE}& ${2:var});",
-			"\t${TM_FILENAME_BASE}& operator=(const ${TM_FILENAME_BASE}& ${3:var});",
 			"\t~${TM_FILENAME_BASE}();",
-			"}",
+			"\t${TM_FILENAME_BASE}();",
+			"\t${TM_FILENAME_BASE}(const ${TM_FILENAME_BASE}& ${2:var});",
+			"\t${TM_FILENAME_BASE}& operator=(const ${TM_FILENAME_BASE}& ${3:var});",
+			"};",
 			"",
 			"#endif  //${TM_FILENAME_BASE}_HPP"
 		],
 		"description": "mypark othodox"
 	},
 	"Othodox implemetation": {
-		"prefix": "class_impl",
+		"prefix": "ocimpl",
 		"body": [
+			"#include \"${TM_FILENAME_BASE}.hpp\"",
+			"",
 			"${TM_FILENAME_BASE}::~${TM_FILENAME_BASE}() {}",
 			"",
 			"${TM_FILENAME_BASE}::${TM_FILENAME_BASE}() {}",
 			"",
-			"${TM_FILENAME_BASE}::${TM_FILENAME_BASE}(${TM_FILENAME_BASE}& ${2:var}) {}",
+			"${TM_FILENAME_BASE}::${TM_FILENAME_BASE}(const ${TM_FILENAME_BASE}& ${2:var}) {}",
 			"",
 			"${TM_FILENAME_BASE}& ${TM_FILENAME_BASE}::operator=(const ${TM_FILENAME_BASE}& ${3:var}) {}",
 		],
 		"description": "mypark othodox"
+	},
+	"const std::string&": {
+		"prefix": "cstr",
+		"body": [
+			"const std::string& "
+		],
+		"description": "mypark cstr"
+	},
+	"string": {
+		"prefix": "str",
+		"body": [
+			"std::string "
+		],
+		"description": "mypark str"
 	}
 }
