@@ -1,3 +1,0 @@
-curl https://az764295.vo.msecnd.net/stable/dfd34e8260c270da74b5c2d86d61aee4b6d56977/VSCode-darwin-universal.zip --output vscode.zip;
-tar -xf vscode.zip -C ~/goinfre;
-rm vscode.zip

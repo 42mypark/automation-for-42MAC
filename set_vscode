@@ -1,2 +1,0 @@
-#!/bin/bash
-alias code="~/goinfre/Visual\ Studio\ Code.app/Contents/MacOS/Electron 1>/dev/null 2>/dev/null &"
