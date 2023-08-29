@@ -14,7 +14,7 @@ fi
 set  -e
 cd ~/goinfre
 
-curl $GRUB_URL --output $GRUB_TARBLL
+curl $GRUB_URL --output $GRUB_TARBALL
 tar -xvf $GRUB_TARBALL
 
 cd $GRUB_NAME

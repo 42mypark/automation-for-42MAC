@@ -19,7 +19,8 @@ else
 	echo brew already installed
 fi
 
-brew_install i686-elf-binutils
-brew_install i686-elf-gcc
+#brew_install i686-elf-binutils
+#brew_install i686-elf-gcc
 brew_install qemu
+brew_install xorriso
 

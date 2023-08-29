@@ -1,9 +1,9 @@
-#!/bin/bash
+#!/bin/zsh
 
 DIR=~/automation/
 
-/bin/zsh $DIR/install_rust.sh 
-/bin/zsh $DIR/install_homebrew.sh 
-/bin/zsh $DIR/grub.sh
+$DIR/install_rust.sh 
+$DIR/install_homebrew.sh 
+$DIR/grub.sh
 
-/bin/zsh $DIR/make_symlink.sh
+$DIR/docker_symlink.sh
